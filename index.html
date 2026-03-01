@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jinghan Liu — Portfolio</title>
+    <meta
+      name="description"
+      content="Personal portfolio template for UX designer Jinghan Liu."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="#home">Jinghan Liu</a>
+        <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="#work">Work</a>
+          <a href="#about">About</a>
+          <a href="#process">Process</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero section">
+        <div class="container hero-grid">
+          <div>
+            <p class="eyebrow">UX Designer • Product Thinker • Storyteller</p>
+            <h1>Designing calm, meaningful digital experiences.</h1>
+            <p class="lead">
+              I help teams turn complex workflows into products people actually
+              love using.
+            </p>
+            <div class="hero-actions">
+              <a href="#work" class="btn primary">View Case Studies</a>
+              <a href="#contact" class="btn ghost">Let’s Collaborate</a>
+            </div>
+          </div>
+          <div class="hero-card">
+            <h2>Currently focused on</h2>
+            <ul id="focus-list"></ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="work" class="section muted">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Selected Work</p>
+            <h2>Case studies with measurable impact</h2>
+          </div>
+          <div id="project-grid" class="project-grid"></div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container about-grid">
+          <div>
+            <p class="eyebrow">About Me</p>
+            <h2>From insight to interface</h2>
+            <p id="about-text"></p>
+          </div>
+          <aside class="about-panel">
+            <h3>Core strengths</h3>
+            <ul id="strength-list"></ul>
+          </aside>
+        </div>
+      </section>
+
+      <section id="process" class="section muted">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Design Process</p>
+            <h2>A framework built for product collaboration</h2>
+          </div>
+          <ol id="process-list" class="process-list"></ol>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container contact-box">
+          <h2>Let’s make something meaningful.</h2>
+          <p>
+            I’m open to full-time opportunities, freelance UX projects, and
+            cross-functional collaborations.
+          </p>
+          <a id="email-link" class="btn primary" href="#">Email Me</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Jinghan Liu. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
